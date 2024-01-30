@@ -26,6 +26,18 @@ app.get('/', function (req, res) {
     let msg="Welcome  to API  cyclic server"
   res.send(msg)
 })
+app.get('/student', function (req, res) {
+ let data= readdata()
+    let msg="Welcome  to API  cyclic server"
+  res.send(data)
+})
+
+app.post('/addstudent', function (req, res) {
+ let student= req.body
+ writedata(student)
+    let msg="Student added succesfully"
+  res.send(msg)
+})
 
 app.listen(port,function(){
     
