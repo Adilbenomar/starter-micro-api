@@ -14,7 +14,7 @@ function writedata(data){
 }
 /////////////////////////////////////////////////////////////////////////////////
  function readdata(){
-     let data = await s3.getObject({
+     let data =  s3.getObject({
             Bucket: "cyclic-muddy-foal-fatigues-eu-north-1",
             Key: "data/data.json",
         })
