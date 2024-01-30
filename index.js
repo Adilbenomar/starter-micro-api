@@ -10,14 +10,14 @@ function writedata(data){
             Body: JSON.stringify(data),
             Bucket: "cyclic-muddy-foal-fatigues-eu-north-1",
             Key: "data/data.json",
-        }).promise()
+        })
 }
 /////////////////////////////////////////////////////////////////////////////////
  function readdata(){
      let data = await s3.getObject({
             Bucket: "cyclic-muddy-foal-fatigues-eu-north-1",
             Key: "data/data.json",
-        }).promise()
+        })
 
      return JSON.parse(data);
  }
