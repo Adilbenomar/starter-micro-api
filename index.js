@@ -7,7 +7,7 @@ app.use(bodyParser.json());
 
 
 app.get('/', function (req, res) {
-    let msg="Welcome to cyclic to API"
+    let msg="Welcome  to API  cyclic server"
   res.send(msg)
 })
 
