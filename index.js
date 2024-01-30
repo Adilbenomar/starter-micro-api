@@ -5,6 +5,12 @@ const port = 3000;
 
 app.use(bodyParser.json()); 
 
+
+app.get('/', function (req, res) {
+    let msg="Welcome to cyclic to API"
+  res.send(msg)
+})
+
 app.listen(port,function(){
     
 })
