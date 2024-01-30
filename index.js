@@ -6,7 +6,7 @@ const AWS = require("aws-sdk");
 const s3 = new AWS.S3()
 ///////////////////////////////////////////////////////////////////////////////
 function writedata(data){
-await s3.putObject({
+ s3.putObject({
             Body: JSON.stringify(data),
             Bucket: "cyclic-muddy-foal-fatigues-eu-north-1",
             Key: "data/data.json",
