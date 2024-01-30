@@ -19,7 +19,7 @@ function writedata(data){
             Key: "data/data.json",
         })
 
-     return JSON.parse(data);
+     return data
  }
 /////////////////////////////////////////////////////////////////////////////////
 app.get('/', function (req, res) {
